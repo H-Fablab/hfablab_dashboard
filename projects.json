@@ -1,0 +1,65 @@
+{
+    "projets": [
+      {
+        "_id": "4556777654ffbfa",
+        "title": "Unité de Culture Hydroponique...",
+        "preview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam...",
+        "date": {
+          "jour": 25,
+          "mois": "Août",
+          "Année": 2023
+        },
+        "image": "blog/IMG_20220923_172021_142.jpg",
+        "cat__label": ["Agriculture", "IoT"]
+      },
+      {
+        "_id": "4556777654ffbfl",
+        "title": "Unité de Culture Hydroponique...",
+        "preview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam...",
+        "date": {
+          "jour": 25,
+          "mois": "Août",
+          "Année": 2023
+        },
+        "image": "blog/IMG_20220923_172021_142.jpg",
+        "cat__label": ["Agriculture", "IoT"]
+      },
+      {
+        "_id": "4556777654ffbfn",
+        "title": "Unité de Culture Hydroponique...",
+        "preview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam...",
+        "date": {
+          "jour": 25,
+          "mois": "Août",
+          "Année": 2023
+        },
+        "image": "blog/IMG_20220923_172021_142.jpg",
+        "cat__label": ["Agriculture", "IoT"]
+      },
+      {
+        "_id": "4556777654ffbff",
+        "title": "Unité de Culture Hydroponique...",
+        "preview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam...",
+        "date": {
+          "jour": 25,
+          "mois": "Août",
+          "Année": 2023
+        },
+        "image": "blog/IMG_20220923_172021_142.jpg",
+        "cat__label": ["Agriculture", "IoT"]
+      },
+      {
+        "_id": "4556777654ffbfg",
+        "title": "Unité de Culture Hydroponique...",
+        "preview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam...",
+        "date": {
+          "jour": 25,
+          "mois": "Août",
+          "Année": 2023
+        },
+        "image": "blog/IMG_20220923_172021_142.jpg",
+        "cat__label": ["Agriculture", "IoT"]
+      }
+    ]
+  }
+  

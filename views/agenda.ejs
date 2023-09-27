@@ -1,0 +1,18 @@
+<%- include('partials/main__header') %>
+    <div class="main--content__wrapper">
+      <%- include('partials/section__header') %>
+        <div class="main--content">
+            <section class="section--wrapper projects--list bg--light">
+              <div class="container">
+                <% event__files.forEach(function(event__file){ %>
+                  <%- include(event__file) %>
+                <% }); %>
+              </div>
+            </section>
+          </div>
+        </div>
+        <%- include('partials/notification__bar') %>
+        <script src="http://www.dev.h-fablab.org/js/events.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,35 @@
+[
+    {
+      "title": "Impression 3D",
+      "file__name": "impression-3d"
+    },
+    {
+      "title": "Fraiseuse numérique",
+      "file__name": "fraiseuse-numerique"
+    },
+    {
+      "title": "Découpe Laser",
+      "file__name": "decoupe-laser"
+    },
+    {
+      "title": "Découpe Vinyle",
+      "file__name": "decoupe-vinyle"
+    },
+    {
+      "title": "Presse à chaud pour transfert",
+      "file__name": "presse-a-chaud-pour-transfert"
+    },
+    {
+      "title": "Brodeuse numérique",
+      "file__name": "brodeuse-numerique"
+    },
+    {
+      "title": "Scie Éélectrique",
+      "file__name": "scie-electrique"
+    },
+    {
+      "title": "Électronique et IoT",
+      "file__name": "electronique-et-iot"
+    }
+  ]
+  

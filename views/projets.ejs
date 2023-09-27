@@ -1,0 +1,51 @@
+<%- include('partials/main__header') %>
+    <div class="main--content__wrapper">
+      <%- include('partials/section__header') %>
+        <div class="main--content">
+
+        <section class="section--wrapper projects--list bg--light">
+            <div class="container">
+                
+                <div class="project--list__wrapper">
+                    
+                <% list__projets.forEach(function(projet) { %>
+                   
+                            <div class="col--unit__6 project--item flex--container">
+                                <div class="image-box col--unit__6">
+                                    <img src="http://www.dev.h-fablab.org/images/unnamed.png" alt="" srcset="">
+                                </div>
+    
+                                <div class="content--box col--unit__6">
+                                <div class="title--group">
+                                        <h4 class="project--title"><%= projet.title %></h4>
+                                </div>
+    
+                                    <div class="dark--separator"></div>
+    
+                                    <p class="pt-1"><%= projet.preview %></p>
+                                <a class="underlined--btn" href="">Découvrir</a>
+                                </div>
+                        </div>
+                    <% }) %>
+                  
+                </div>
+                <div class="center">
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a href="#" class="active">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>
+             </div>
+            </div>
+        </section>
+      </div>
+    </div>
+    <%- include('partials/notification__bar') %>
+    <script src="js/main.js"></script>
+</body>
+</html>

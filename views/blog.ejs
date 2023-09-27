@@ -1,0 +1,45 @@
+<%- include('partials/main__header') %>
+    <div class="main--content__wrapper">
+      <%- include('partials/section__header') %>
+        <div class="main--content">
+             <section class="section--wrapper blog--page">
+                <div class="container">
+                    <div class="blog--posts__wrapper flex--container">
+                        <% blog_posts.forEach(function(blog_post) { %>
+                            <div class="col--unit__4 post--item">
+                                <div class="img--box ">
+                                    <img src="http://www.dev.h-fablab.org/images/Rectangle%2012%20(1).png" alt="" srcset="">
+                                    <div class="date--card__wrapper">
+                                    <div class="date--card">
+                                            <span class="day"><%= blog_post.date.jour %></span>
+                                        <span class="month "><%= blog_post.date.mois %></span>
+                                    </div>
+                                    </div>
+                                </div>
+                
+                                <div class="post--body">
+                                    <div class="cat--labels">
+                                        <% blog_post.cat__label.forEach(function(label) { %>
+                                            <span class="category--label"><%= label %></span>
+                                        <% }) %>
+                                    </div>
+                
+                                    <a target="_blank" href="http://www.dev.h-fablab.org/blog/post?title=<%= blog_post.link_title %>&id=<%= blog_post._id %>">
+                                                        <h4 class="post--title">
+                                                            <%= blog_post.title %>
+                                                        </h4>
+                                    </a>
+                
+                                    <a class="underlined--btn" target="_blank" href="http://www.dev.h-fablab.org/blog/post?title=<%= blog_post.link_title %>&id=<%= blog_post._id %>">Lire l'article</a>
+                                </div>
+                            </div>
+                        <% }) %>
+                    </div>
+                </div>
+             </section>
+        </div>
+    </div>
+  <%- include('partials/notification__bar') %>
+  <script src="js/main.js"></script>
+</body>
+</html>

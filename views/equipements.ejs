@@ -1,0 +1,38 @@
+<%- include('partials/main__header') %>
+    <div class="main--content__wrapper">
+      <%- include('partials/section__header') %>
+        <div class="main--content">
+            <section class="section--wrapper  equipment mb-5">
+                <div class="container equipments--container">
+                  
+                         <div class="nav--tabs">
+                                <div class="scroll--controllers__wrap">
+                                    <span id="slideLeft"><i class="arrow left"></i></span>
+                                    <span id="slideRight"><i class="arrow right"></i></span>
+                                </div>
+                                <div class="nav--tabs--container">
+
+                                    <% let isFirst = true; %>
+                                    <% equipmentsData.forEach(function(equipment){ %>
+                                    <a class="nav--tabs__links <%= isFirst ? 'active' : '' %>"><%= equipment.title %></a>
+                                    <% isFirst = false; %>
+                                    <% }) %>
+                                </div>
+                            </div>
+                        <div class="equipment__description--wrapper">
+                            <% let firstListed = true; %>
+                                <% equipmentsData.forEach(function(equipment){ %>
+                                        <%- include(equipment.file__name) %> 
+                                <% let firstListed = false; %>  
+                            <% }) %>
+                        </div>
+                   
+                </div>
+            </section>
+        </div>
+    </div>
+    <%- include('partials/notification__bar') %>
+    <script src="js/main.js"></script>
+    <script src="https://www.dev.h-fablab.org/js/equipments.js"></script>
+</body>
+</html>
