@@ -1,0 +1,163 @@
+<%- include('partials/main__header') %>
+    <div class="main--content__wrapper">
+      <%- include('partials/section__header') %>
+        <div class="main--content">
+            <div>
+                <div class="member--profile__top--card">
+                  <div class="profile--group__wrapper">
+                     <div class="profile--group">
+  
+                        <div class="name--cell">
+                          <div class="name--wrap name--label">
+                            <span class="rounded--label label--01">
+                              PL
+                            </span>
+                          </div>
+                        <div class="name-group">
+                          <span class="name">Marc Doe</span>
+                          <span class="email">marcdoe@gmail.com</span>
+                        </div>
+                      </div>
+  
+                        <div class="account--status">
+                            <span class="status--title">Statut</span>
+                            <div class="status--group">
+                              <span class="icon--wrapper a-button round--btn -regular center">
+                                <i class="bx bxs-phone"></i>
+                              </span>
+                              <span class="content">Compte actif</span>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="button-container">
+                        <a class="a-button -outline center">Touch me <i></i> </a>
+                        <a class="a-button -dark center">Let's start</a>
+                      </div>
+                  </div>
+                  <div class="bottom--wrapper">
+                    <h5>Détails du compte</h5>
+                  </div>
+                </div>
+  
+                <div class="member--profile__body flex--container">
+                    <div class="col--unit__4 profile--summary">
+                        <div class="intro infos">Personal details</div>
+                        <div class="infos--group">
+                          <div class="infos--entry">
+                              <span class="title">Pays</span>
+                               <span class="content">Wakaland</span>
+                          </div>
+                           <div class="infos--entry">
+                              <span class="title">Ville</span>
+                               <span class="content">Cotonou</span>
+                          </div>
+                           <div class="infos--entry">
+                              <span class="title">Tel</span>
+                               <span class="content">+2258987445</span>
+                          </div>
+                           <div class="infos--entry">
+                              <span class="title">Inscrit</span>
+                               <span class="content">12 Nov 23</span>
+                          </div>
+                           <div class="infos--entry adress">
+                              <span class="title">Adresse</span>
+                               <span class="content">Avenue de la chance, lomé Togo</span>
+                          </div>
+                        </div>
+  
+                        <div class="member--card__group">
+                          <div class="intro card">Carte de membre</div>
+                           <div class="membercard--box">
+                              <!-- <div class="nocard--wrapper">
+                                <p>Aucune carte membre</p>
+                              </div> -->
+                              <img class="member--crd__img" src="images/card.png" alt="">
+                           </div>
+                            <div class="button-container">
+                            <a class="a-button -outline center">Retirer la carte<i></i> </a>
+                            <a class="a-button -dark center">Uploader une carte</a>
+                         </div>
+                        </div>
+                    </div>
+                      <div class="col--unit__8 subscription--summary">
+                        <div class="subscription--card">
+  
+                          <!-- <div class="top--info">
+                              <span class="no--price" >Aucun abonnement</span>
+                          </div>
+                          <div class="subscription--bottom">
+                          
+                              <a class="btn btn--sm btn--primary" href="http://">Demander une carte</a>
+                          </div>  -->
+                          <div class="top--info">
+                              <span class="background--span" >Abonnement</span>
+                              <span class="price" >10.000 FCFA<sup>/AN</sup></span>
+                          </div>
+                          <div class="subscription--bottom">
+                              <div class="expiration--group">
+                                  <p>Période</p>
+                                  <span class="expiration--date">25 Juil 23 - 24 Juil 24</span>
+                              </div>
+      
+                              <span class="a-button subscription--label -dark center" >5000 FCFA / 10000 FCFA</span>
+                          </div>
+                      </div>
+                          <div class="subscription--transaction">
+                            <div class="data-table subscription--transaction__list">
+                              <div class="table--header">
+                                    <div class="table--row">
+                                        <div class="table-h cell-01">Montant</div>
+                                        <div class="table-h cell-02">Détails</div>
+                                        <div class="table-h cell-04">Statut</div>
+                                    </div>
+                              </div>
+        
+                            <div class="table--body">
+                                <div class="table--row">
+                                <div class="name--cell">
+                                  <div class="name-group">
+                                    <span class="name">5000 FCFA</span>
+                                    <span class="email">15 Septembre 2023</span>
+                                  </div>
+                                </div>
+                                <div class="date--cell info--trnsaction">
+                                    <span class="transaction--method">MTN Bénin</span>
+                                    <span class="transaction--detail">+22900689562</span>
+                                </div>
+                                <div class="actions-call">
+                                      <span class="transaction--status"> Succes</span>
+                                </div>
+                                </div>
+        
+                                <div class="table--row">
+                                  <div class="name--cell">
+                                    <div class="name-group">
+                                      <span class="name">3000 FCFA</span>
+                                      <span class="email">02 Mars 2023</span>
+                                    </div>
+                                  </div>
+                                  <div class="date--cell info--trnsaction">
+                                      <span class="transaction--method">MTN Bénin</span>
+                                      <span class="transaction--detail">+22900689562</span>
+                                  </div>
+                                  <div class="actions-call">
+                                    <span class="transaction--status"> Succes </span>
+                                  </div>
+                                  </div>
+  
+                                  
+                            </div>
+                      </div>
+                     <div class="right--btn__wrapper">
+                      <a class='a-button -dark center'>Let's start</a>
+                     </div>
+                        </div>
+                      </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <%- include('partials/notification__bar') %>
+    <script src="js/main.js"></script>
+</body>
+</html>

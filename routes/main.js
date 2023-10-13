@@ -13,6 +13,10 @@ router.get('/', (req, res) => {
   res.render('index')
 });
 
+router.get('/login', (req, res) => {
+  res.render('login')
+});
+
 router.get('/projets', projetsRoute)
 
 router.get('/blog', blogRoute)
@@ -23,8 +27,41 @@ router.get('/documentation', documentationRoute)
 
 router.get('/equipements', equipmentsRoute)
 
-router.get('/add', (req, res) => {
-    res.render('add-new')
-  });
+router.get('/membres', (req, res) => {
+    res.render('membres')
+});
+router.get('/profile', (req, res) => {
+    res.render('profile')
+});
+router.get('/donnations', (req, res) => {
+    res.render('donnations')
+});
+router.get('/messages', (req, res) => {
+    res.render('messages')
+});
+router.get('/mon-compte', (req, res) => {
+    res.render('mon-compte')
+});
+router.get('/newletters', (req, res) => {
+    res.render('newletters')
+});
+router.get('/comptes-administrateurs', (req, res) => {
+    res.render('comptes-administrateurs')
+});
+router.get('/inscription-ateliers', (req, res) => {
+    res.render('inscription-ateliers')
+});
+router.get('/projets-soummis', (req, res) => {
+    res.render('projets-soummis')
+});
+router.get('/reservations-equipements', (req, res) => {
+    res.render('reservations-equipements')
+});
+
+// router.get('/new-page/:type', (req, res) => {
+//     const content = req.params.type
+//     const currentPage = "new-page"
+//     res.render('new-page', {content, currentPage})
+// });
 
 export default router

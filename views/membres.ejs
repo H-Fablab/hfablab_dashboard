@@ -1,0 +1,142 @@
+<%- include('partials/main__header') %>
+    <div class="main--content__wrapper">
+      <%- include('partials/section__header') %>
+        <div class="main--content">
+            <div class="content--header">
+                <h4 class="content--title">Liste des inscriptions</h4>
+                 <div class="actions--group">
+                     <form class="search--bar" action="/form/submit" method="GET">
+                       <input type="search" name="" class="search--input" placeholder="Rechercher">
+                       <button class="button"><i class='bx bx-search-alt-2' ></i></button>
+                     </form>
+                       <div class="header--actions button-container">
+                         <div class='a-button -outline center'>Touch me <i></i> </div>
+                         <div class='a-button -dark center'>Let's start</div>
+                       </div>
+                 </div>
+             </div> 
+             
+            <div class="table--wrapper members--list">
+                <div class="data-table checkbox-table">
+                  
+                  <div class="table--body">
+                    <div class="table--row label--04">
+                      <div class="select-box">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input checkbox" id="customCheck3">
+                              <label class="custom-control-label" for="customCheck3"></label>
+                          </div>
+                        </div>
+                        <div class="name--cell">
+                          <div class="name--wrap name--label">
+                            <span class="rounded--label">
+                              SK
+                            </span>
+                          </div>
+                        <div class="name-group">
+                          <span class="name">Marc Doe</span>
+                          <span class="email">marcdoe@gmail.com</span>
+                        </div>
+                      </div>
+                      <div class="date--cell"><span class="phone">+225 6889655</span></div>
+                      <div class="object--cell">
+                           <span class="subscription--title" >Abonnement</span>
+                           <span class="subscription--label">Expirée</span>
+                       </div>
+                      <div class="actions-call">
+                        <span class="icon--wrapper">
+                          <a href="http://" class="a-button -regular sm-btn a-button center">
+                            <i class='bx bx-edit-alt'></i>
+                          </a>
+                        </span>
+                        <span class="icon--wrapper">
+                          <a href="http://" class="a-button -regular sm-btn a-button center">
+                            <i class='bx bx-trash-alt' ></i>
+                          </a>
+                          
+                        </span>
+                      </div>
+                     </div>
+                   <div class="table--row label--03">
+                    <div class="select-box">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input checkbox" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3"></label>
+                        </div>
+                      </div>
+                      <div class="name--cell">
+                        <div class="name--wrap name--label">
+                          <span class="rounded--label label--01">
+                            KH
+                          </span>
+                        </div>
+                      <div class="name-group">
+                        <span class="name">Marc Doe</span>
+                        <span class="email">marcdoe@gmail.com</span>
+                      </div>
+                    </div>
+                    <div class="date--cell"><span class="email">+229 774555666</span></div>
+                    <div class="object--cell">
+                      <span class="subscription--title" >Abonnement</span>
+                      <span class="subscription--label">En cours</span>
+                  </div>
+                    <div class="actions-call">
+                      <span class="icon--wrapper">
+                        <a href="http://" class="a-button -regular sm-btn a-button center">
+                          <i class='bx bx-edit-alt'></i>
+                        </a>
+                      </span>
+                      <span class="icon--wrapper">
+                        <a href="http://" class="a-button -regular sm-btn a-button center">
+                          <i class='bx bx-trash-alt' ></i>
+                        </a>
+                        
+                      </span>
+                    </div>
+                   </div>
+                   <div class="table--row label--04">
+                    <div class="select-box">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input checkbox" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3"></label>
+                        </div>
+                      </div>
+                      <div class="name--cell">
+                        <div class="name--wrap name--label">
+                          <span class="rounded--label">
+                            SK
+                          </span>
+                        </div>
+                      <div class="name-group">
+                        <span class="name">Marc Doe</span>
+                        <span class="email">marcdoe@gmail.com</span>
+                      </div>
+                    </div>
+                    <div class="date--cell"><span class="phone">+227 9889655</span></div>
+                    <div class="object--cell">
+                         <span class="subscription--title" >Abonnement</span>
+                         <span class="subscription--label">Expirée</span>
+                     </div>
+                    <div class="actions-call">
+                      <span class="icon--wrapper">
+                        <a href="http://" class="a-button -regular sm-btn a-button center">
+                          <i class='bx bx-edit-alt'></i>
+                        </a>
+                      </span>
+                      <span class="icon--wrapper">
+                        <a href="http://" class="a-button -regular sm-btn a-button center">
+                          <i class='bx bx-trash-alt' ></i>
+                        </a>
+                        
+                      </span>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <%- include('partials/notification__bar') %>
+    <script src="js/main.js"></script>
+</body>
+</html>

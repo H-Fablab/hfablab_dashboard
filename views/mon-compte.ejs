@@ -1,0 +1,108 @@
+<%- include('partials/main__header') %>
+    <div class="main--content__wrapper">
+      <%- include('partials/section__header') %>
+        <div class="main--content">
+            <div class="flex--container admins--profile">
+                
+                <div class="col--unit__4 profil--summary">
+                 
+                  <div class="name--wrap name--label">
+                    <span class="square--label label--01">
+                      PL
+                    </span>
+                  </div>
+
+                   <div class="admin--name__wrapper">
+                        <span class="name"> Marc lévi</span>
+                        <span class="role"><i class='bx bxs-user'></i> Admin fablab</span>
+                   </div>
+
+                   <div class="summary">
+                      <div class="summary--item">
+                          <span class="icon--wrapper a-button round--btn -regular center">
+                            <i class='bx bxs-phone' ></i>
+                          </span>
+                          <span class="content"> +5416 65658 </span>
+                      </div>
+
+                      <div class="summary--item">
+                        <span class="icon--wrapper a-button -regular round--btn center"><i class='bx bxs-phone' ></i></span>
+                        <span class="content"> hhablab@gmail.com </span>
+                      </div>
+
+                      <div class="summary--item">
+                        <span class="icon--wrapper a-button round--btn -regular center"><i class='bx bxs-phone' ></i></span><span class="content"> Inscrit le 12/12/23 </span>
+                      </div>
+
+                   </div>
+
+                </div>
+
+
+                <div class="col--unit__8 profil--details">
+                    <div class="col--header">
+                        <h4> High Quality Web Icons</h4>
+                        <p> Simple Open Source icons carefully crafted for designers & developers </p>
+                    </div>
+
+                    <div class="form--wrapper">
+                      <form name="admin--summary" class="admin--summary__form default--form">
+                        <div class="profil--pic__wrapper">
+                            <div class="user--profil">
+                              <div class="name--wrap name--label">
+                                <span class="rounded--label label--01">
+                                  PL
+                                </span>
+                              </div>
+                            </div>
+                            <div class="actions--btn__group button-container">
+                              <a class='a-button -dark center'>Charger une photo</a>
+                              <a class='a-button -outline center'>Retirer la photo<i></i> </a>
+                              
+                            </div>
+                        </div>
+                        <div class="input--wrapper">
+                          <label>Name:</label>
+                          <input type="text" id="name" placeholder="Name" autocomplete="off"/>
+                        </div>
+                        <div class="input--wrapper">
+                          <label>Password:</label>
+                          <input type="password" id="password" placeholder="Password"/>
+                        </div>
+                        <div class="input--wrapper">
+                          <label>Email:</label>
+                          <input type="email" id="email" placeholder="Email" autocomplete="off"/>
+                        </div>
+
+                        <div class="input--wrapper">
+                          <label>Upload file</label>
+                          <i class='bx bx-cloud-upload' ></i>
+                          <input type="email" id="email" placeholder="Email" autocomplete="off"/>
+                        </div>
+                        <div class="input--wrapper">
+                          <label>Country:</label>
+                          <select name="" id="cusSelectbox">
+                            <option value="select">select</option>
+                            <option value="india">india</option>
+                            <option value="nepal">nepal</option>
+                            <option value="bangladesh">bangladesh</option>
+                            <option value="sri lanka">sri lanka</option>
+                            <option value="pakistan">pakistan</option>
+                          </select>
+                        </div>
+                        <div class="input--wrapper">
+                          <button type="submit" class="btn form--submit btn--dark">Submit</button>
+                        </div>
+                        <div class="errorBlock">
+                          <p id="regisErr"></p>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    <%- include('partials/notification__bar') %>
+    <script src="js/main.js"></script>
+</body>
+</html>

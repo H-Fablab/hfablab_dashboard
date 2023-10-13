@@ -1,0 +1,145 @@
+<%- include('partials/main__header') %>
+    <div class="main--content__wrapper">
+      <%- include('partials/section__header') %>
+        <div class="main--content">
+
+            <div class="content--header">
+                <h4 class="content--title">Liste des inscriptions</h4>
+                 <div class="actions--group">
+                     <form class="search--bar" action="/form/submit" method="GET">
+                       <input type="search" name="" class="search--input" placeholder="Rechercher">
+                       <button class="button"><i class='bx bx-search-alt-2' ></i></button>
+                     </form>
+                       <div class="header--actions button-container">
+                         <div class='a-button -outline center'>Touch me <i></i> </div>
+                         <div class='a-button -dark center'>Let's start</div>
+                       </div>
+                 </div>
+             </div> 
+             
+            <div class="table--wrapper message--list">
+                <div class="data-table checkbox-table">
+                    <div class="table--header">
+                        <div class="table--row">
+                          <div class="table-h cell-00">#</div>
+                            <div class="table-h cell-01">Nom</div>
+                            <div class="table-h cell-02">Date</div>
+                            <div class="table-h cell-03">Sujet</div>
+                            <div class="table-h cell-04">Action</div>
+                        </div>
+                    </div>
+                    <div class="table--body">
+                      <div class="table--row">
+                        <div class="select-box">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input checkbox" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3"></label>
+                        </div>
+                      </div>
+                      <div class="name--cell">
+                          <div class="name--wrap name--label">
+                            <span class="square--label label--01">
+                               PL
+                            </span>
+                          </div>
+                        <div class="name-group">
+                          <span class="name">Marc Doe</span>
+                          <span class="email">marcdoe@gmail.com</span>
+                        </div>
+                      </div>
+                      <div class="date--cell">09 Sept 2023</div>
+                      <div class="object--cell">Project manager</div>
+                      <div class="actions-call">
+                          <span class="icon--wrapper">
+                            <a href="http://" class="a-button -regular sm-btn a-button center">
+                              <i class='bx bx-edit-alt'></i>
+                            </a>
+                          </span>
+                          <span class="icon--wrapper">
+                            <a href="http://" class="a-button -regular sm-btn a-button center">
+                              <i class='bx bx-trash-alt' ></i>
+                            </a>
+                            
+                          </span>
+                      </div>
+                      <p class="message--body">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt
+                     </p>
+                      </div>
+                      <div class="table--row">
+                        <div class="select-box">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input checkbox" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3"></label>
+                        </div>
+                      </div>
+                    <div class="name--cell">
+                        <div class="name--wrap name--label">
+                          <span class="square--label label--01">
+                            PL
+                          </span>
+                        </div>
+                      <div class="name-group">
+                        <span class="name">Marc Doe</span>
+                        <span class="email">marcdoe@gmail.com</span>
+                      </div>
+                    </div>
+                    <div class="date--cell">09 Sept 2023</div>
+                    <div class="object--cell">Project manager</div>
+                      <div class="actions-call">
+                        
+                        <span class="icon--wrapper">
+                          <a href="http://" class="a-button -regular sm-btn a-button center">
+                            <i class='bx bx-edit-alt'></i>
+                          </a>
+                        </span>
+                        <span class="icon--wrapper">
+                          <a href="http://" class="a-button -regular sm-btn a-button center">
+                            <i class='bx bx-trash-alt' ></i>
+                          </a>
+                          
+                        </span>
+                      </div>
+                      </div>
+                      <div class="table--row">
+                        <div class="select-box">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input checkbox" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3"></label>
+                        </div>
+                      </div>
+                      <div class="name--cell">
+                        <div class="name--wrap name--label">
+                          <span class="square--label label--02">
+                            PL
+                          </span>
+                        </div>
+                      <div class="name-group">
+                        <span class="name">Marc Doe</span>
+                        <span class="email">marcdoe@gmail.com</span>
+                      </div>
+                    </div>
+                    <div class="date--cell">09 Sept 2023</div>
+                    <div class="object--cell">Project manager</div>
+                      <div class="actions-call">
+                        <span class="icon--wrapper">
+                          <a href="http://" class="a-button -regular sm-btn a-button center">
+                            <i class='bx bx-edit-alt'></i>
+                          </a>
+                        </span>
+                        <span class="icon--wrapper">
+                          <a href="http://" class="a-button -regular sm-btn a-button center">
+                            <i class='bx bx-trash-alt' ></i>
+                          </a>
+                        </span>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <%- include('partials/notification__bar') %>
+    <script src="js/main.js"></script>
+</body>
+</html>
