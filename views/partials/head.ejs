@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <% if (currentPage === "new-page") { %>
-      <base href="../">    
+    <% if (typeof currentPage !== 'undefined') { %>
+        <% if (currentPage === "new-page") { %>
+            <base href="../">
+        <% } %>
     <% } %>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

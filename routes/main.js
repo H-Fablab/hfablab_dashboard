@@ -10,7 +10,7 @@ const router = express.Router()
 const partialNameFromDatabase = "SomeValueFromDatabase"
 
 router.get('/', (req, res) => {
-  res.render('index')
+    res.render('login')
 });
 
 router.get('/login', (req, res) => {
