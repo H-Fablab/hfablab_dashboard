@@ -1,7 +1,23 @@
 <%- include('partials/main__header') %>
     <div class="main--content__wrapper">
       <%- include('partials/section__header') %>
-        <div class="main--content">
+        <div class="main--content news--letter">
+          <div class="content--header action--group">
+            <h4 class="content--title">Liste des abonnées</h4>
+             <div class="actions--group">
+                 <form class="search--bar" action="/form/submit" method="GET">
+                   <input type="search" name="" class="search--input" placeholder="Rechercher">
+                   <button class="button"><i class='bx bx-search-alt-2' ></i></button>
+                 </form>
+                   <div class="header--actions button-container">
+                     <div class='a-button -dark center'>Supprimer la sélection</div>
+                   </div>
+             </div>
+         </div> 
+         <div class="table--uper">
+          <h4 class="table--intro">Liste d'inscrits</h3>
+            <div class='a-button -outline center'><i class='bx bx-user-plus' ></i> 3 Incrit(s) <i></i> </div>
+       </div>
             <div class="table--wrapper mail--table">
                 <div class="name--cell">
                   <div class="name--wrap name--label">

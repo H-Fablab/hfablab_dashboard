@@ -2,6 +2,18 @@
     <div class="main--content__wrapper">
       <%- include('partials/section__header') %>
         <div class="main--content">
+          <div class="content--header action--group">
+            <h4 class="content--title">Liste des projets soumis</h4>
+             <div class="actions--group">
+                 <form class="search--bar" action="/form/submit" method="GET">
+                   <input type="search" name="" class="search--input" placeholder="Rechercher">
+                   <button class="button"><i class='bx bx-search-alt-2' ></i></button>
+                 </form>
+                   <div class="header--actions button-container">
+                     <div class='a-button -dark center'>Placeholder</div>
+                   </div>
+             </div>
+         </div> 
             <div class="submitted--project__wrapper">
                 <div class="submit--project label--03">
                      <div class="upscale--row">
@@ -36,7 +48,7 @@
                         <p class="project--description">
                           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt
                         </p>
-                        <a class="btn download--btn" href=""> Telecharger <i class='bx bxs-download'></i></a>
+                        <a class="btn download--btn" href=""> Telecharger le pdf   <i class='bx bxs-download'></i></a>
                      </div>
                 </div>
   

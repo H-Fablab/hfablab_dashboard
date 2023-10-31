@@ -2,7 +2,26 @@
     <div class="main--content__wrapper">
       <%- include('partials/section__header') %>
         <div class="main--content">
+          <div class="content--header action--group">
+            <h4 class="content--title">Liste des donnations</h4>
+             <div class="actions--group">
+                 <form class="search--bar" action="/form/submit" method="GET">
+                   <input type="search" name="" class="search--input" placeholder="Rechercher">
+                   <button class="button"><i class='bx bx-search-alt-2' ></i></button>
+                 </form>
+                   <div class="header--actions button-container">
+                     <div class='a-button -dark center'>Supprimer la sélection</div>
+                   </div>
+             </div>
+         </div> 
             <div class="table--wrapper donation--list">
+              <div class="table--uper">
+                <h4 class="table--intro">Dons financière</h3>
+                  <div class="header--actions button-container">
+                  <div class='a-button -outline center'><i class='bx bx-edit-alt'></i> Dons en finnanciers (8) <i></i> </div>
+                  <div class='a-button -outline center'><i class='bx bx-edit-alt'></i> Don en nature (14) <i></i> </div>
+                  </div>
+             </div>
                 <div class="data-table checkbox-table">
                   <div class="table--header">
                       <div class="table--row">

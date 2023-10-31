@@ -2,6 +2,18 @@
     <div class="main--content__wrapper">
       <%- include('partials/section__header') %>
         <div class="main--content">
+            <div class="content--header action--group">
+                <h4 class="content--title">Liste des articles</h4>
+                 <div class="actions--group">
+                     <form class="search--bar" action="/form/submit" method="GET">
+                       <input type="search" name="" class="search--input" placeholder="Rechercher">
+                       <button class="button"><i class='bx bx-search-alt-2' ></i></button>
+                     </form>
+                       <div class="header--actions button-container">
+                        <a class='a-button -dark center' href="/create/new_blog">Ajouter un post</a>
+                       </div>
+                 </div>
+             </div> 
              <section class="section--wrapper blog--page">
                 <div class="container">
                     <div class="blog--posts__wrapper flex--container">

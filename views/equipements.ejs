@@ -4,8 +4,17 @@
         <div class="main--content">
             <section class="section--wrapper  equipment mb-5">
                 <div class="container equipments--container">
-                  
-                         <div class="nav--tabs">
+                    <div class="content--header action--group">
+                        <h4 class="content--title">Liste des équipements</h4>
+                         <div class="actions--group">
+                            <div class='a-button -outline center'>Startup grind Abidjan<i></i> </div>
+                               <div class="header--actions button-container">
+                                 <a class='a-button -outline center' href="edit/equipment/121155">Modifier <i></i> </a>
+                                 <a class='a-button -dark center' href="/create/new_equipment">Ajouter équipement</a>
+                               </div>
+                         </div>
+                     </div> 
+                         <!-- <div class="nav--tabs">
                                 <div class="scroll--controllers__wrap">
                                     <span id="slideLeft"><i class="arrow left"></i></span>
                                     <span id="slideRight"><i class="arrow right"></i></span>
@@ -18,7 +27,7 @@
                                     <% isFirst = false; %>
                                     <% }) %>
                                 </div>
-                            </div>
+                            </div> -->
                         <div class="equipment__description--wrapper">
                             <% let firstListed = true; %>
                                 <% equipmentsData.forEach(function(equipment){ %>

@@ -4,6 +4,7 @@ import blogRoute from '../middlewares/blog.js'
 import documentationRoute from '../middlewares/documentation.js'
 import projetsRoute from '../middlewares/projets.js'
 import equipmentsRoute from '../middlewares/equipements.js'
+import NewPagesController from '../views/controllers/NewPages.controller.js'
 const router = express.Router()
 
 // Simulated database query to get partialNameFromDatabase
@@ -58,10 +59,10 @@ router.get('/reservations-equipements', (req, res) => {
     res.render('reservations-equipements')
 });
 
-// router.get('/new-page/:type', (req, res) => {
-//     const content = req.params.type
-//     const currentPage = "new-page"
-//     res.render('new-page', {content, currentPage})
-// });
+router.get('/editor', (req, res) => {
+    res.render('editor')
+});
+
+router.get('/create/:type', NewPagesController.create);
 
 export default router

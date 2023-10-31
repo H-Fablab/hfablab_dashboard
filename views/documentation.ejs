@@ -1,16 +1,26 @@
 <%- include('partials/main__header') %>
     <div class="main--content__wrapper">
       <%- include('partials/section__header') %>
-        <div class="main--content">
-       
+        <div class="main--content documentation">
+            <div class="content--header action--group">
+                <h4 class="content--title">Liste des articles</h4>
+                 <div class="actions--group">
+                     <form class="search--bar" action="/form/submit" method="GET">
+                       <input type="search" name="" class="search--input" placeholder="Rechercher">
+                       <button class="button"><i class='bx bx-search-alt-2' ></i></button>
+                     </form>
+                       <div class="header--actions button-container">
+                        <a class='a-button -dark center' href="/create/new_documentation">Ajouter un post</a>
+                       </div>
+                 </div>
+             </div> 
+
+                
           <div class="content--wrapper"> 
-              <!-- <div class="active--categorie">
-                  <a href="http://">Articles récents</a>
-                  <span><svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4.00056 3.68144L6.88806 0.793945L7.71289 1.61878L4.00056 5.33111L0.288226 1.61878L1.11306 0.793945L4.00056 3.68144Z" fill="#505050" fill-opacity="0.55"></path>
-                      </svg>
-                  </span>
-              </div> -->
+            <div class="table--uper">
+              <h4 class="table--intro">Liste d'inscrits</h3>
+                <div class='a-button -outline center'><i class='bx bx-user-plus' ></i> 3 Messages <i></i> </div>
+           </div>
               <div class="topic--list">
 
                 <% documentation__posts.forEach(function(documentation__post) { %>
@@ -24,10 +34,11 @@
                               </svg>
                       </span>
                       <div class="content">
+                        <a class="" target="_blank" href="http://www.dev.h-fablab.org/blog/post?title=<%= documentation__post.link_title %>&id=<%= documentation__post._id %>">
                           <h3><%= documentation__post.title %></h3>
                           <p><%= documentation__post.full_title %></p>
 
-                          <!-- <a class="underlined--btn" target="_blank" href="http://www.dev.h-fablab.org/blog/post?title=<%= documentation__post.link_title %>&id=<%= documentation__post._id %>">Lire l'article</a> -->
+                       </a>
                       </div>
                   </div>
                   <% }) %>

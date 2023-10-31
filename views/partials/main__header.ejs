@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+      <% if (typeof currentPage !== 'undefined') { %>
+        <% if (currentPage.includes("/create/")) { %>
+            <base href="../../">
+        <% } %>
+    <% } %>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -24,20 +28,20 @@
             </div>
             
             <div class="navbar_content">
-              <i class="bi bi-grid"></i>
+              <!-- <i class="bi bi-grid"></i>
               <i class='bx bx-sun' id="darkLight"></i>
               <i class='bx bx-bell' ></i>
-              <img src="images/profile.jpg" alt="" class="profile" />
+              <img src="images/profile.jpg" alt="" class="profile" /> -->
             </div>
           </nav>
           <!-- sidebar -->
-          <nav class="sidebar">
+          <nav class="sidebar ">
             <div class="menu_content">
               <ul class="menu_items">
                 <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
                 <!-- start -->
                 <li class="item">
-                  <a href="/" class="nav_link">
+                  <a href="/dashboard" class="nav_link">
                     <span class="navlink_icon">
                       <i class="bx bx-home-alt"></i>
                     </span>
@@ -45,7 +49,7 @@
                   </a>
                 </li>
                 <li class="item">
-                  <a href="#" class="nav_link">
+                  <a href="/membres" class="nav_link">
                     <span class="navlink_icon">
                       <i class='bx bx-group'></i>
                     </span>
@@ -65,22 +69,28 @@
                   </div>
                   <ul class="menu_items submenu">
                     <a href="/equipements" class="nav_link sublink">Liste</a>
-                    <a href="#" class="nav_link sublink">Reservation</a>
+                    <a href="/reservations-equipements" class="nav_link sublink">Reservation</a>
                   </ul>
                 </li>
                 <!-- end -->
               </ul>
               <ul class="menu_items">
                 <!-- duplicate these li tag if you want to add or remove navlink only -->
-               
+        
                 <li class="item">
-                  <a href="#" class="nav_link">
+                  <div href="#" class="nav_link submenu_item">
                     <span class="navlink_icon">
-                      <i class='bx bx-hive'></i>
+                      <i class="bx bx bx-hive"></i>
                     </span>
-                    <span class="navlink">Ateliers</span>
-                  </a>
+                    <span class="navlink">Atelies</span>
+                    <i class="bx bx-chevron-right arrow-left"></i>
+                  </div>
+                  <ul class="menu_items submenu">
+                    <a href="/ateliers" class="nav_link sublink">Liste des ateliers</a>
+                    <a href="/inscription-ateliers" class="nav_link sublink">Inscription</a>
+                  </ul>
                 </li>
+
                 <li class="item">
                   <a href="/agenda" class="nav_link">
                     <span class="navlink_icon">
@@ -90,17 +100,23 @@
                   </a>
                 </li>
                 <li class="item">
-                  <a href="/projets" class="nav_link">
+                  <div href="#" class="nav_link submenu_item">
                     <span class="navlink_icon">
-                      <i class='bx bx-rocket'></i>
+                      <i class="bx bx-rocket"></i>
                     </span>
-                    <span class="navlink">Projets</span>
-                  </a>
+                    <span class="navlink">Projet</span>
+                    <i class="bx bx-chevron-right arrow-left"></i>
+                  </div>
+                  <ul class="menu_items submenu">
+                    <a href="/projets" class="nav_link sublink">Liste des projets</a>
+                    <a href="/projets-soummis" class="nav_link sublink">Soumissions</a>
+                  </ul>
                 </li>
               </ul>
+             
               <ul class="menu_items">
                 <li class="item">
-                  <a href="#" class="nav_link">
+                  <a href="/messages" class="nav_link">
                     <span class="navlink_icon">
                       <i class='bx bx-chat'></i>
                     </span>
@@ -117,7 +133,7 @@
                   </a>
                 </li>
                 <li class="item">
-                  <a href="#" class="nav_link">
+                  <a href="/donnations" class="nav_link">
                     <span class="navlink_icon">
                       <i class='bx bx-donate-heart' ></i>
                     </span>
@@ -125,13 +141,23 @@
                   </a>
                 </li>
                 <li class="item">
-                  <a href="#" class="nav_link">
+                  <a href="/newletters" class="nav_link">
                     <span class="navlink_icon">
                       <i class='bx bxs-user-detail'></i>
                     </span>
-                    <span class="navlink">Comptes</span>
+                    <span class="navlink">Newsletter</span>
                   </a>
                 </li>
+
+                <li class="item">
+                  <a href="/comptes-administrateurs" class="nav_link">
+                    <span class="navlink_icon">
+                      <i class='bx bxs-user-detail'></i>
+                    </span>
+                    <span class="navlink">Comptes admin</span>
+                  </a>
+                </li>
+
                 <li class="item">
                   <a href="/documentation" class="nav_link">
                     <span class="navlink_icon">

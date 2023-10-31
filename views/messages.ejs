@@ -3,21 +3,22 @@
       <%- include('partials/section__header') %>
         <div class="main--content">
 
-            <div class="content--header">
-                <h4 class="content--title">Liste des inscriptions</h4>
+            <div class="content--header action--group">
+                <h4 class="content--title">Liste des messages</h4>
                  <div class="actions--group">
                      <form class="search--bar" action="/form/submit" method="GET">
                        <input type="search" name="" class="search--input" placeholder="Rechercher">
                        <button class="button"><i class='bx bx-search-alt-2' ></i></button>
                      </form>
-                       <div class="header--actions button-container">
-                         <div class='a-button -outline center'>Touch me <i></i> </div>
-                         <div class='a-button -dark center'>Let's start</div>
-                       </div>
+                       
                  </div>
              </div> 
              
             <div class="table--wrapper message--list">
+              <div class="table--uper">
+                <h4 class="table--intro">Liste d'inscrits</h3>
+                  <div class='a-button -outline center'><i class='bx bx-user-plus' ></i> 3 Messages <i></i> </div>
+             </div>
                 <div class="data-table checkbox-table">
                     <div class="table--header">
                         <div class="table--row">

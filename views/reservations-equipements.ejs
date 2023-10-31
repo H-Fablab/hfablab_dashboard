@@ -2,6 +2,18 @@
     <div class="main--content__wrapper">
       <%- include('partials/section__header') %>
         <div class="main--content">
+          <div class="content--header action--group">
+            <h4 class="content--title">Liste des réservations</h4>
+             <div class="actions--group">
+                 <form class="search--bar" action="/form/submit" method="GET">
+                   <input type="search" name="" class="search--input" placeholder="Rechercher">
+                   <button class="button"><i class='bx bx-search-alt-2' ></i></button>
+                 </form>
+                   <div class="header--actions button-container">
+                     <a class='a-button -dark center' href="/equipements">Voir la lite des équipements</a>
+                   </div>
+             </div>
+         </div> 
             <div class="flex--container equipment--reservation">
                 <div class="reservation--card label--01">
                   <div class="reservation--card__header">

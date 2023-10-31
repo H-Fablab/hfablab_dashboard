@@ -2,21 +2,25 @@
     <div class="main--content__wrapper">
       <%- include('partials/section__header') %>
         <div class="main--content">
-            <div class="content--header">
-                <h4 class="content--title">Liste des inscriptions</h4>
+            <div class="content--header action--group">
+                <h4 class="content--title">Liste des membres</h4>
                  <div class="actions--group">
                      <form class="search--bar" action="/form/submit" method="GET">
                        <input type="search" name="" class="search--input" placeholder="Rechercher">
                        <button class="button"><i class='bx bx-search-alt-2' ></i></button>
                      </form>
                        <div class="header--actions button-container">
-                         <div class='a-button -outline center'>Touch me <i></i> </div>
-                         <div class='a-button -dark center'>Let's start</div>
+                         <div class='a-button -dark center'>Supprimer la sélection</div>
                        </div>
                  </div>
              </div> 
              
             <div class="table--wrapper members--list">
+
+              <div class="table--uper">
+                <h4 class="table--intro">Liste d'inscrits</h3>
+                  <div class='a-button -outline center'><i class='bx bx-user'></i> 3 Membre(s) <i></i> </div>
+             </div>
                 <div class="data-table checkbox-table">
                   
                   <div class="table--body">
@@ -45,8 +49,8 @@
                        </div>
                       <div class="actions-call">
                         <span class="icon--wrapper">
-                          <a href="http://" class="a-button -regular sm-btn a-button center">
-                            <i class='bx bx-edit-alt'></i>
+                          <a href="/profile" class="a-button -regular sm-btn a-button center">
+                            <i class='bx bx-plus-circle'></i>
                           </a>
                         </span>
                         <span class="icon--wrapper">
@@ -82,8 +86,8 @@
                   </div>
                     <div class="actions-call">
                       <span class="icon--wrapper">
-                        <a href="http://" class="a-button -regular sm-btn a-button center">
-                          <i class='bx bx-edit-alt'></i>
+                        <a href="/profile" class="a-button -regular sm-btn a-button center">
+                          <i class='bx bx-plus-circle'></i>
                         </a>
                       </span>
                       <span class="icon--wrapper">
@@ -119,8 +123,8 @@
                      </div>
                     <div class="actions-call">
                       <span class="icon--wrapper">
-                        <a href="http://" class="a-button -regular sm-btn a-button center">
-                          <i class='bx bx-edit-alt'></i>
+                        <a href="/profile" class="a-button -regular sm-btn a-button center">
+                          <i class='bx bx-plus-circle'></i>
                         </a>
                       </span>
                       <span class="icon--wrapper">

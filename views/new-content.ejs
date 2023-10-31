@@ -1,9 +1,9 @@
-<%- include('partials/main__header') %>
+<%- include('partials/main__header', {currentPage}) %>
     <div class="main--content__wrapper">
       <%- include('partials/section__header') %>
         <div class="main--content">
            
-         <%- include(`./newContent/${content}`) %>
+         <%- include(`./newContentForm/${type}`) %>
 
           </div>
         </div>
